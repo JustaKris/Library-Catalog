@@ -38,7 +38,7 @@ jobs:
       uses: johnbeynon/render-deploy-action@v0.0.8
       with:
         service-id: ${{ secrets.SERVICE_BACKEND_ID }}
-        api_key: ${{ secrets.RENDER_TOKEN }}
+        api-key: ${{ secrets.RENDER_TOKEN }}
   
   deploy-frontend-to-render:
     runs-on: ubuntu-latest
@@ -48,4 +48,4 @@ jobs:
       uses: johnbeynon/render-deploy-action@v0.0.8
       with:
         service-id: ${{ secrets.SERVICE_FRONTEND_ID }}
-        api_key: ${{ secrets.RENDER_TOKEN }}
+        api-key: ${{ secrets.RENDER_TOKEN }}
